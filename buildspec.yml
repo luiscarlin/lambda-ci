@@ -1,6 +1,9 @@
 
 version: 0.1
 phases:
+  pre-build:
+    commands:
+      - printenv
   install:
     commands:
       - npm install
