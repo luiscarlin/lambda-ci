@@ -1,0 +1,45 @@
+{
+  "name": "lambda-ci",
+  "version": "1.0.0",
+  "description": "All of the tested out lambda continually integrated",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter xunit-file spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiscarlin/lambda-ci.git"
+  },
+  "keywords": [
+    "fun"
+  ],
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
+  },
+  "author": "luis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luiscarlin/lambda-ci/issues"
+  },
+  "homepage": "https://github.com/luiscarlin/lambda-ci#readme",
+  "dependencies": {
+    "time": "^0.12.0"
+  },
+  "devDependencies": {
+    "guard": "^0.1.2",
+    "mocha": "^3.5.3",
+    "node-guard": "^1.0.0",
+    "sinon": "^4.0.0",
+    "sinon-chai": "^2.13.0",
+    "chai": "^4.1.2",
+    "chai-spies": "^0.7.1",
+    "coffee-script": "^1.12.7",
+    "xunit-file": "^1.0.0"
+  }
+}

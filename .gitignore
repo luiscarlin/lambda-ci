@@ -1,1 +1,5 @@
 .*.sw?
+Gemfile.lock
+package-lock.json
+node_modules
+xunit.xml
