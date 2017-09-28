@@ -1,11 +1,9 @@
 
 version: 0.1
 phases:
-  pre_build:
-    commands:
-      - printenv
   install:
     commands:
+      - printenv
       - npm install
       - npm test
       - aws s3 sync mochawesome-report s3://testresults.code.people.pillartechnology.com/$CODEBUILD_SOURCE_VERSION
