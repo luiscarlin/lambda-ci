@@ -4,7 +4,7 @@
   "description": "All of the tested out lambda continually integrated",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter xunit-file spec"
+    "test": "mocha --reporter mochawesome spec"
   },
   "repository": {
     "type": "git",
@@ -32,14 +32,14 @@
     "time": "^0.12.0"
   },
   "devDependencies": {
-    "guard": "^0.1.2",
-    "mocha": "^3.5.3",
-    "node-guard": "^1.0.0",
-    "sinon": "^4.0.0",
-    "sinon-chai": "^2.13.0",
     "chai": "^4.1.2",
     "chai-spies": "^0.7.1",
     "coffee-script": "^1.12.7",
-    "xunit-file": "^1.0.0"
+    "guard": "^0.1.2",
+    "mocha": "^3.5.3",
+    "mochawesome": "^2.3.1",
+    "node-guard": "^1.0.0",
+    "sinon": "^4.0.0",
+    "sinon-chai": "^2.13.0"
   }
 }
