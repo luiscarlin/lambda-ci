@@ -9,7 +9,7 @@ phases:
       - echo "done"
       - npm install
       - npm test
-      - aws s3 sync mochawesome-report s3://testresults.code.people.pillartechnology.com/$CODEBUILD_SOURCE_VERSION
+      - aws s3 sync mochawesome-report s3://testresults.code.people.pillartechnology.com/$CODEBUILD_RESOLVED_SOURCE_VERSION
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket code.people.pillartechnology.com --output-template-file NewSamTemplate.yaml
 artifacts:
   type: zip
